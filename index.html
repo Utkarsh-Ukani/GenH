@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenH</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #28a745; /* Green */
+        }
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #c3e6cb; /* Lighter green */
+        }
+        .jumbotron {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                        url('./assets/education-day-arrangement-table-with-copy-space.jpg') center/cover no-repeat;
+            height: 60vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem;
+        }
+        .jumbotron p {
+            font-size: 1.5rem;
+        }
+        .card {
+            background-color: #fff;
+            border: none;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            /* height: 400px; */
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            flex-grow: 1;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-fullscreen {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact-form label {
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: #28a745; /* Green */
+            border-color: #28a745;
+        }
+        .btn-primary:hover {
+            background-color: #218838; /* Darker green */
+            border-color: #1e7e34;
+        }
+        .footer {
+            background-color: #28a745; /* Green */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GenH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Welcome to GenH</h1>
+            <p class="lead">Your one-stop resource for understanding Hair Care, Skin Care, Mental Health, and Puberty.</p>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container">
+                <h2 class="text-center mb-5">Explore Our Topics</h2>
+                <div class="row">
+                    <!-- Hair Care Card -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm d-flex flex-column">
+                            <img src="./assets/haircare.jpg" class="card-img-top img-fluid" alt="Hair Care">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Hair Care</h5>
+                                <p class="card-text">Learn about the best practices for maintaining healthy hair.</p>
+                                <a href="#" class="btn btn-primary mt-auto">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skin Care Card -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm d-flex flex-column">
+                            <img src="./assets/skincare.jpg" class="card-img-top img-fluid" alt="Skin Care">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Skin Care</h5>
+                                <p class="card-text">Explore tips and tricks for keeping your skin glowing and healthy.</p>
+                                <a href="#" class="btn btn-primary mt-auto">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mental Health Card -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm d-flex flex-column">
+                            <img src="./assets/mentalHealth.jpg" class="card-img-top img-fluid" alt="Mental Health">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Mental Health</h5>
+                                <p class="card-text">Understand the importance of mental well-being and how to achieve it.</p>
+                                <a href="#" class="btn btn-primary mt-auto">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Puberty Card -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm d-flex flex-column">
+                            <img src="./assets/puberty.jpg" class="card-img-top img-fluid" alt="Puberty">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Puberty</h5>
+                                <p class="card-text">Get insights into the changes during puberty and how to navigate them.</p>
+                                <a href="#" class="btn btn-primary mt-auto">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-fullscreen bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>About Us</h2>
+                        <p>EduWebsite is dedicated to providing reliable and easy-to-understand information on hair care, skin care, mental health, and puberty. Our mission is to empower individuals with knowledge to make informed decisions about their health and well-being.</p>
+                        <p>We believe that everyone deserves access to quality information that can help them take better care of themselves. Our team of experts work tirelessly to ensure that the content we provide is accurate, up-to-date, and relevant to your needs.</p>
+                        <p>Whether you're looking for tips on how to take care of your hair, ways to improve your skin health, strategies to maintain mental wellness, or guidance through the changes of puberty, EduWebsite has you covered. We strive to be your trusted resource for all things related to personal care and health education.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./assets/about us.jpg" class="img-fluid rounded" alt="About Us Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-fullscreen">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>Contact Us</h2>
+                        <p>If you have any questions or need further information, please don't hesitate to reach out to us. You can contact us via email at <a href="mailto:info@eduwebsite.com">info@eduwebsite.com</a> or use the form below.</p>
+                        <div class="contact-form">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./assets/contact us.jpg" class="img-fluid rounded" alt="Contact Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 EduWebsite. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
