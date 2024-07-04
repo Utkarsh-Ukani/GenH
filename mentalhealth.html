@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #c9d5d1; /* Light gray */
+            color: #333;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #60A78C; /* Red */
+        }
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f8d7da; /* Lighter red */
+        }
+        .jumbotron {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                        url('./assets/mentalhealthbanner.webp') center/cover no-repeat;
+            height: 60vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem;
+        }
+        .jumbotron p {
+            font-size: 1.5rem;
+        }
+        .card {
+            background-color: #f5f2f2;
+            border: none;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            height: 400px; /* Fixed height for all cards */
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            flex-grow: 1;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-fullscreen {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .footer {
+            background-color: #60A78C; /* Red */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GenH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./haircare.html">Hair Care</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./skincare.html">Skin Care</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Mental Health Tips</h1>
+            <p class="lead">Explore tips for maintaining mental well-being.</p>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Top Mental Health Tips</h2>
+                <div class="row">
+                    <!-- Tip 1 -->
+                    <div class="col-md-4 mb-4" data-aos="fade-up">
+                        <div class="card shadow-sm">
+                            <img src="./assets/mentalhealthmindfulness.avif" class="card-img-top" alt="Practice Mindfulness">
+                            <div class="card-body">
+                                <h5 class="card-title">Practice Mindfulness</h5>
+                                <p class="card-text">Take time to practice mindfulness techniques like meditation or deep breathing to reduce stress.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tip 2 -->
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card shadow-sm">
+                            <img src="./assets/mentalhealthStayActive.webp" class="card-img-top" alt="Stay Active">
+                            <div class="card-body">
+                                <h5 class="card-title">Stay Active</h5>
+                                <p class="card-text">Engage in regular physical activity to boost your mood and improve mental clarity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tip 3 -->
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card shadow-sm">
+                            <img src="./assets/mentalhealthfriends.webp" class="card-img-top" alt="Seek Support">
+                            <div class="card-body">
+                                <h5 class="card-title">Seek Support</h5>
+                                <p class="card-text">Reach out to friends, family, or a therapist for emotional support when needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Tip 4 -->
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card shadow-sm">
+                            <img src="./assets/mentalhealthDiet.webp" class="card-img-top" alt="Healthy Diet">
+                            <div class="card-body">
+                                <h5 class="card-title">Healthy Diet</h5>
+                                <p class="card-text">Eat a nutritious diet rich in vitamins and minerals to support mental well-being.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tip 5 -->
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card shadow-sm">
+                            <img src="./assets/mentalhealthgratitude.avif" class="card-img-top" alt="Practice Gratitude">
+                            <div class="card-body">
+                                <h5 class="card-title">Practice Gratitude</h5>
+                                <p class="card-text">Keep a gratitude journal to focus on positive aspects of your life and improve mental outlook.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tip 6 -->
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card shadow-sm">
+                            <img src="./assets/mentalhealthsleep.webp" class="card-img-top" alt="Get Enough Sleep">
+                            <div class="card-body">
+                                <h5 class="card-title">Get Enough Sleep</h5>
+                                <p class="card-text">Prioritize quality sleep to enhance mood, concentration, and overall mental health.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GenH. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
